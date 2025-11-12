@@ -7,6 +7,16 @@
 
     //ENTRADA
 
+    let nomeUsuario = prompt(`Insira seu nome de usuário!`);
+    let senha = prompt(`Insira sua senha!`);
+
+    while (nomeUsuario == senha) {
+        alert(`ERRO! Nome de usuário e senha NÃO podem ser iguais!`);
+        
+        nomeUsuario = prompt(`Insira seu nome de usuário!`);
+        senha = prompt(`Insira sua senha!`);
+    }
+
 
     //PROCESSAMENTO
 

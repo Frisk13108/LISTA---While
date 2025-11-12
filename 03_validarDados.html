@@ -11,9 +11,39 @@
     */
 
     //ENTRADA
+    let nome = "";
+    let idade = 0;
+    let salario = 0;
+    let sexo = "";
+    let estadoCivil = "";
 
+    do {
+        nome = prompt(`Informe seu nome!`);
+    } while ((Array.from(nome)).length < 3);
+
+    do {
+        idade = Number(prompt(`Informe sua idade!`));
+    } while (idade > 150 || idade < 0);
+
+    do {
+        salario = Number(prompt(`Informe seu salário!`));
+    } while (salario < 0);
+
+    do {
+        sexo = prompt(`Informe seu sexo!`).toUpperCase();
+    } while (sexo !== "F" && sexo !== "M");
+
+    do {
+        estadoCivil = prompt(`Informe seu estado civil! (s - solteiro; c - casado; v - viuvo; d - divorciado)`).toLowerCase();
+    } while (estadoCivil !== 's' && estadoCivil !== 'c' && estadoCivil !== 'v' && estadoCivil !== 'd');
 
     //PROCESSAMENTO
+
+    document.write(`Nome: ${nome} <br>`);
+    document.write(`Idade: ${idade} <br>`);
+    document.write(`Salário: ${salario} <br>`);
+    document.write(`Sexo: ${sexo} <br>`);
+    document.write(`Estado Civil: ${estadoCivil} <br>`);
 
 
     //SAÍDA
