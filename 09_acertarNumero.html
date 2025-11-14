@@ -5,11 +5,21 @@
     */
 
     //ENTRADA
-
+    let aleatorio = (Math.random() * (31 - 1) + 1).toFixed(0);
 
     //PROCESSAMENTO
+    let seuNumero = 0;
+    do {
+        seuNumero = Number(prompt(`Adivinhe um número entre 1 e 30`));
 
+        if (seuNumero > aleatorio) {
+            alert(`Menor!`);
+        } else if (seuNumero < aleatorio){
+            alert(`Maior!`);
+        } 
+    } while (seuNumero != aleatorio);
 
     //SAÍDA
+    alert(`PARABÉNS!! Você acertou!`);
     
 </script>

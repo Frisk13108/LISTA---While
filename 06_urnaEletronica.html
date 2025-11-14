@@ -21,8 +21,31 @@
 
     //ENTRADA
 
+    let joaozinho = 0;
+    let mariazinha = 0;
+    let nulo = 0;
+    let branco = 0;
+
 
     //PROCESSAMENTO
+    let vencedor = 0;
+    let voto = 0;
+
+    do {
+        voto = Number(prompt(`Insira seu voto! \n1. Candidato Joãozinho \n2. Candidato Mariazinha \n3. Nul \n4. Branco`));
+
+        if (voto == 1) {
+            joaozinho++;
+        } else if (voto == 2){
+            mariazinha++;
+        } else if (voto == 3){
+            nulo++;
+        } else if (voto == 4){
+            branco++;
+        } else {
+            
+        }
+    } while (voto !== 0);
 
 
     //SAÍDA
