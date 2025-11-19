@@ -5,12 +5,30 @@
     */
 
     //ENTRADA
-    let 
+    let quantos = Number(prompt(`Digite quantos números você quer para a sequência de Fibonacci?`));
 
 
     //PROCESSAMENTO
+    let anterior = 1;
+    let atual = 1;
+    let proximo = 0;
+
+    let sequencia = 0;
+    let fibonacci = [];
+
+    do {
+        fibonacci.push(atual);
+
+        proximo = anterior + atual;
+
+        anterior = atual;
+        atual = proximo;
+
+        sequencia++
+    } while (sequencia !== quantos);
 
 
     //SAÍDA
+    document.write(`${fibonacci.join(", ")}`);
     
 </script>

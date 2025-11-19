@@ -9,10 +9,25 @@
 
     //ENTRADA
 
+    let numero = prompt(`Insira um número!`);
+
 
     //PROCESSAMENTO
 
+    let invertida = "";
+    let posicao = numero.length - 1;
+
+    let umNumero = "";
+
+    while (posicao >= 0) {
+        let caractere = numero[posicao];
+        invertida = invertida + caractere;
+        posicao--;
+    }
 
     //SAÍDA
+
+    document.write(`O número ${numero} invertido é ${invertida}`);
+
 
 </script>
